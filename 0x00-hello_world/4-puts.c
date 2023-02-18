@@ -1,5 +1,7 @@
 #include<stdio.h>
-/* main function always return zero */
+/* main - starting point
+ * return zero
+ */
 int main(void)
 {
 	puts("Programming is like building a multilingual puzzle");
