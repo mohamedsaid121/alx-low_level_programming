@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - function return _putchar word
  * it's allowed to use putchar function only
