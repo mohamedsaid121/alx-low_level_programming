@@ -7,7 +7,7 @@
  * condition 3:For numbers which are multiples of both 3 and 5 print FizzBuzz.
  * Return: 0
  */
-int fizz_buzz(void)
+int main(void)
 {
 	int i;
 
