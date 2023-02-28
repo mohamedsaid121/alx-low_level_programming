@@ -21,9 +21,9 @@ int fizz_buzz(void)
 		{
 			printf("Buzz ");
 		}
-		else if ((i % 3) == 0 && (i % 3) == 0)
+		else if ((i % 3) != 0 && (i % 5) != 0)
 		{
-		i	printf("Fizz Buzz ");
+			printf("Fizz Buzz ");
 		}
 		else
 		{
