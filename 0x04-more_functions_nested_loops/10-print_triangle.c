@@ -16,9 +16,11 @@ void print_triangle(int size)
 		space = size - 1;
 		for (i = 0; i < size; i++)
 		{
-			for (mar = 0; mar < (space - 1); mar++)
+			mar = 0;
+			while (mar < (space - i))
 			{
 				_putchar(32);
+				mar++;
 			}
 
 			j = size - mar;
