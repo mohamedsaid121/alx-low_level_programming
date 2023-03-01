@@ -5,21 +5,23 @@
  */
 int main(void)
 {
-	unsigned long int num = 612852475143;
-	unsigned long int prim;
-
-	prim = 3;
-	while (prim < num / 2)
+	long number = 612852475143;
+	int i;
+	while (i++ < number / 2)
 	{
-		if ((num % prim) == 0)
+		if (number % i == 0)
 		{
-			if ((prim % 3) == 2)
-			{
-				printf(",%lu ", prim);
-			}
+			number /= 2;
+			continue;
 		}
-		prim += 2;
+
+		for (i = 3; i < number / 2; i += 2)
+		{
+			if (number % i == 0)
+				number /= i;
+
+		}
 	}
-	putchar('\n');
+	printf("%ld\n", number);
 	return (0);
 }
