@@ -1,3 +1,24 @@
+/**
+ * print_alphabt - print the lower-case alphabet on one line.
+ */
+int _putchar(char c);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(char c);
+int _isalpha(char c);
+int print_sign(int n);
+int _abs(int n);
+int print_last_digit(int n);
+void jack_bauer(void);
+void times_table(void);
+int add(int a, int b);
+void print_to_98(int n);
+void print_times_table(int n);
+
+
+/**
+ * Module 0x05 functions declarations
+ */
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
@@ -8,4 +29,19 @@ void puts2(char *str);
 void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
+
+/**
+ * prototypes for module 0x03
+ */
+int _isupper(int c);
+int _isdigit(int c);
+int mul(int a, int b);
+void print_numbers(void);
+void print_most_numbers(void);
+void more_numbers(void);
+void print_line(int n);
+void print_diagonal(int n);
+void print_square(int size);
+void print_triangle(int size);
+void print_number(int n);
 
