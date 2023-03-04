@@ -5,11 +5,12 @@
  */
 void puts2(char *str)
 {
-	long int pos;
+	int pos;
 
-	for (pos = 0; *(str + pos) != '\0'; pos += 2)
+	for (pos = 0; *(str + pos) != '\0'; pos++)
 	{
-		_putchar(*(str + pos));
+		if ((pos % 2) == 0)
+			_putchar(*(str + pos));
 	}
 	_putchar('\n');
 }
