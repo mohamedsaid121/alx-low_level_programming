@@ -6,10 +6,11 @@
 void puts_half(char *str)
 {
 	int med;
+	int len = _strlen(str);
 
-	if ((_strlen(str) % 2) != 0)
+	if ((len % 2) != 0)
 	{
-		med = ((_strlen(str) + 1) / 2) + 1;
+		med = ((len + 1) / 2) + 1;
 		while (*(str + med) != '\0')
 		{
 			_putchar(*(str + med));
@@ -18,7 +19,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		med = (_strlen(str) / 2) + 1;
+		med = (len / 2) + 1;
 		while (*(str + med) != '\0')
 		{
 			_putchar(*(str + med));
@@ -26,4 +27,19 @@ void puts_half(char *str)
 		}
 	}
 	_putchar('\n');
+}
+/**
+ * _strlen - function that get length of a string
+ * @s: argument (pointer) and points to char value
+ * Return: length of char
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*(s + count) != '\0')
+	{
+		count++;
+	}
+	return (count);
 }
