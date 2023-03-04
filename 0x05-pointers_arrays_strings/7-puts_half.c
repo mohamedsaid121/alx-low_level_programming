@@ -10,7 +10,7 @@ void puts_half(char *str)
 
 	if ((len % 2) != 0)
 	{
-		med = ((len + 1) / 2) + 1;
+		med = ((len + 1) / 2);
 		while (*(str + med) != '\0')
 		{
 			_putchar(*(str + med));
@@ -19,7 +19,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		med = (len / 2) + 1;
+		med = (len / 2);
 		while (*(str + med) != '\0')
 		{
 			_putchar(*(str + med));
