@@ -3,7 +3,7 @@
  * puts2 - function that print every other char
  * @str: argument pointer points to char value
  */
-void puts2(char *str);
+void puts2(char *str)
 {
 	int pos;
 
