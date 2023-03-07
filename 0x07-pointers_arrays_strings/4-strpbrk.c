@@ -10,21 +10,16 @@ nclude "main.h"
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, z;
+	int i;
 
-	i = 0;
-	z = 0;
-
-	while (s[i] != '\0')
+	while (*s)
 	{
-		z = 0;
-		while (accept[z] != '\0')
+		for (i = 0; accept[i]; i++)
 		{
-			if (s[i] == accept[z])
-				return ((s + i));
-			z++;
+			if (accept[i] == *s)
+				return (s);
 		}
-		i++;
+		s++;
 	}
-	return (NULL);
+	return ('\0');
 }
